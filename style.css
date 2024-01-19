@@ -1,0 +1,358 @@
+* {
+    margin: 0;
+}
+
+.principal{
+    width:100vw;
+    height:100vh;
+    background:url("./giphy.gif") center center no-repeat;
+    background-size:cover;
+    overflow:hidden;
+    position: relative;
+    
+}
+.footerp{
+    width:100vw;
+    height:50px;
+    background-color:#3d0204;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.footer{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 10px;
+    color: #000000;
+    border-top: 1px solid #f60000;
+    width: 100%;
+}
+@keyframes fondAnime {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+@keyframes deplacementNuage {
+    to {
+        left: 100%;
+    }
+}
+.nuage{
+    position:absolute;
+    width:10px;
+    height: 15px;
+    top:50%;
+    left:-100px;
+    background:url("./fumé2.webp");
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width: 100px;
+        height: 60px;
+        background-color: #fff; 
+        border-radius: 50px; 
+        animation: deplacementNuage 5s linear infinite;
+        font-family:Arial, Helvetica, sans-serif;
+        color:#7a7141;
+    }
+.nav{
+width: 100%;
+height: 6vh;
+display: flex;
+justify-content: flex-end;
+align-items: center;
+background-color:#e5e5e5;
+}
+.hamburger {
+    display: none;
+}
+.bar ,
+.fa-times {
+    width: 1.5rem;
+    height: 3px;
+    display: block;
+    color:#da1a1a;
+    padding: 0;
+    margin:6px;
+    transition:0.5s;
+    background-color: red;
+
+}
+.bar:nth-child(1) {
+    width: 100%;
+  }
+  
+  .bar:nth-child(2) {
+    width: 200%;
+  }
+  
+  .bar:nth-child(3) {
+    width: 300%;
+  }
+
+@media screen and (max-width: 767px) {
+ .hamburger {
+    display: block;
+    margin-right: 50px;
+    background-color: black;
+ }
+ .liens {
+    width:100%;
+    height:100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    right: -100%;
+    transition: 0.5s;
+ }
+ .actibe .bar:nth-child(2) {
+    opacity: 0;
+ }
+ .active .bar:nth-child(1) {
+    -webkit-transform: translate(0px) rotate(-315deg);
+    transform: translate(0px) rotate(-315deg);
+    width: 300%;
+ }
+.active .bar:nth-child(3) {
+    -webkit-transform: translate(-10px) rotate(-45deg);
+    transform: translate(-10px) rotate(-45de);
+    width: 300%;
+}
+ .bar
+
+.iconlien {
+    width: 60px;
+    height: 60px;
+}
+.rectangle{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    margin: 20px;
+    align-items: center;
+}
+.right {
+    width: 40%;
+    height: 80%;
+    border-radius: 100%;
+    transition: transform 0.4s ease-in-out;
+    
+}
+.right:hover {
+    transform: scale(1.2);
+}
+.left {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 200px;
+}
+.carre1{
+    font-size: 124px;
+    color: #7a7141;
+   
+}
+.carre2{
+    font-size: 20px;
+    color: #7a7141;
+    margin-bottom: 126px;
+}
+.carre3{
+    font-size: 15px;
+    color:black;
+}
+.strong{
+    font-weight: bold;
+}
+.image{
+    margin-top:101px;
+
+}
+@media screen and (max-width: 767px) {
+    .carre1{
+        font-size: 58px;
+    }
+    .principal{
+        height:83vh;
+    }
+    .src{
+        margin:2px;
+    }
+}
+@media screen and (max-width:768px) and (max-width:1023) {
+    .nuage{
+        top:58%;
+
+    }
+    .carre1{
+        font-size:93px;
+    }
+}
+.projet{
+    width:100vw;
+    height:100vh;
+    background:url("./giphy\ \(3\).gif") center center no-repeat;
+    background-size:cover;
+    position:relative;
+    
+}
+
+.mesprojets{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    font-family: fantasy;
+}
+.mesprojets h2 {
+    width:684px;
+    height:50px;
+    top:50%;
+    left:50%;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:center;
+
+}
+.mesprojets ul{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:center;
+    font-size:63px;
+    text-decoration:none;
+    font-family:fantasy;
+    list-style: none;
+    width: 300px;
+    margin: 20px;
+    padding:10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%, -50%);
+}
+.mesprojets li{
+    padding: 8px;
+    border-bottom: 1px solid #eee;
+}
+
+.mesprojets li a {
+    text-decoration: none;
+    color: white;
+}
+.about{
+    width:100vw;
+    height:80vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    position:relative;
+    background:url("./_42ff3022-c6c8-4d78-8513-dad8d4ad1bb2.jpeg");
+    background-size:cover;
+}
+.titre1 {
+    width:50%;
+    height:100%;
+    font-size: 90px;
+
+}
+@keyframes vague {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px); 
+    }
+}
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+.titre1 p {
+    height:100%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size: 40px;
+    font-family:fangsong;
+    font-weight: bold;
+}
+.titre2{
+    width:50%;
+    height:100%;
+    background-color:rgb(0, 0, 0);
+    display:flex;
+    justify-content: flex-end;
+    background-image: url("./OIG\ \(2\).jpeg");
+    align-items:center;
+    background-size: cover;
+
+}
+.image2{
+    border-radius:20px;
+}
+.titre2 p {
+    width: 100%;
+    font-family: fantasy;
+    font-size: 17px;
+    color:#ffffff;
+    
+}
+.cercle4{
+    width:100px;
+    height:100px;
+    border: 1px solid #000000;
+    position:absolute;
+    left:50%;
+    transform: translateX(-50%);
+    background-color:aqua;
+    background:url("./_0dbe156d-3ff2-49bf-9888-04e44ec72728.jpeg");
+    background-size: cover;
+    border-radius:100px;
+    top:30px;
+}
+.texte-cercle{
+    position: absolute;
+    top: 100%;
+    left: 100%;
+    transform-origin: 50% 100%;
+    animation: rotation 4s linear infinite;
+
+}
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+.texte-cercle span {
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    line-height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}

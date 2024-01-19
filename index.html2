@@ -1,0 +1,17 @@
+
+<link rel="stylesheet" href="style.css">
+
+<div class="main">
+    <div class="carre1">
+        <p class="texte"></p>
+     </div>
+    <div class="carre2">
+        <p class="texte1"></p>
+    </div>
+    
+    <img src="lien de l'image" alt="dragon" class="src">
+    <div class="carre3">
+        <p class="texte2"></p>
+    </div>
+    <img src="lien de l'image" alt="projet" class="src"
+</div>
