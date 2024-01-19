@@ -1,6 +1,10 @@
 * {
     margin: 0;
 }
+html, body {
+    max-width: 100% ! important;
+    overflow-x: hidden ! important;
+    }
 
 .principal{
     width:100vw;
